@@ -1,30 +1,446 @@
 ---
 title: "SWITCHING IT UP: MIXED FEEDING PLAN MAY LEAD TO IMPROVED UTILIZATION OF DIETARY PLANT PROTEIN"
 author: "Aubrey Dissinger"
-format: html
+format: pdf
 editor: visual
+editor_options: 
+  chunk_output_type: console
 ---
-## Look at this
 
-Here we are making changes and pulling back to local 
+## Introduction
 
-## Quarto
+Increasingly popular as a fishmeal (FM) replacement in aquafeeds, soybean meal (SBM) is widely available, cost effective, and high in protein (Park et al. 2017, Lin and Luo 2011, Zhou et al. 2005). However, there are negative attributes to dietary SBM due to the presence of several anti-nutritional factors (Makkar 1993, Francis et al. 2001). These negative effects can present as reduced feed intake, reduced growth performance, and the development of SBM induced enteritis (SBMIE; Hua et al. 2019, Francis et al. 2001, Zhou et al. 2005, Krogdahl et al. 2010). Typical histological signs of SBMIE include shortening of mucosal folds, thickening of lamina propria, and infiltration of inflammatory cells (Gu et al. 2016, Fuentes-Quesada et al. 2018, Agboola et al. 2022a), all of which interfere with the ability of the intestine to efficiently digest and absorb nutrients.
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+Past studies have shown varying time frames for the onset of enteritis symptoms. One study of grass carp (*Ctenopharyngodon idellus*), a herbivorous species, found the symptomatic stage of SBMIE to occur between 7 to 10 days of feeding with a 70% SBM diet (Peng et al. 2020). In omnivorous species, the onset may occur earlier for lower levels of SBM inclusion. A study of the common carp (*Cyprinus carpio*) found the first visible morphological evidence of enteritis after 7 days of feeding with a 20% SBM diet (Urán et al. 2008). In the case of zebrafish (*Danio rerio*), signs of intestinal inflammation have arisen between days 4 (Hedrera et al. 2013) and 10 (Rehmann et al. 2022) when fed 50% SBM diets. Carnivorous species are less equipped to consume plant feedstuffs (Oliva-Teles et al. 2015) and signs of intestinal inflammation present at lower inclusion levels of SBM (Sales 2009). Morphological changes in the intestine were detected in Atlantic salmon (*Salmo salar*) after 5 days of feeding with a 20% SBM diet and 7 days of feeding with a 10% SBM diet (Urán et al. 2009).
 
-## Running Code
+While the onset of SBMIE varies between species and feeding habit, it typically takes a few days of consistent SBM diet feeding to occur. Thus, varying the feeding regimen and utilizing a pattern of alternating diets may allow for the intestinal tract to heal or cope with the anti-nutritional factors present in SBM. Several studies have investigated the effects of feeding regimen on growth (Lawrence et al. 2012, Gonzales and Law 2013, Farias and Certal 2016), reproduction (Lawrence et al. 2012, Gonzales and Law 2013, Farias and Certal 2016), metabolism (Fang et al. 2013), and behavior (Dametto et al. 2018). However, not much is known on how varying feeding regimens affect SBM utilization and SBMIE. Thus, the objective of this study was to use the zebrafish, an omnivorous species with a middle-ground tolerance to SBM (Hedrera et al. 2013), as a model to investigate the effects of alternating feeding regimen with SBM diet on growth performance, feed utilization, and intestinal health.
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+## Methods
 
-```{r}
-1 + 1
+**Experimental Design and Feeding Regimen**
+
+Twelve 3.0 L tanks were assigned in triplicate (n = 3) to one of four treatment groups: fish that received the same FM-based diet every day (**FM-FM**), fish that received the same SBM-based diet every day (**SBM-SBM**), fish that received alternating FM- and SBM-based diets daily (**FM-SBM**), and fish that received alternating FM- and SBM-based diets weekly (**FM/SBM**). At 22 days-post-fertilization (dpf), zebrafish were randomly stocked into treatment tanks one fish at a time until all tanks contained 21 fish. Thirty initial fish samples were euthanized using an ice slurry of equal parts ice and water (Wallace et al. 2018), patted dry, and weighed to obtain an average initial weight. This average initial weight was used to calculate the starting biomass of each tank. The feeding trial was carried out from 23 dpf to 49 dpf, before zebrafish reached sexual maturation. This was done to prevent any biases in growth performance due to sexual dimorphism.
+
+To avoid differences in experimental diet feed intake resulting from stress-related anorexia, the feeding trial began 24 hours after stocking at 23 dpf. Zebrafish were fed their respective diets to apparent satiation three times per day. The feeding periods were 09:30-10:30, 13:00-14:00, and 16:30-17:30. Due to the varying feeding regimens between tanks, care was taken to create a satiation feeding protocol that limited biases between treatments as well as negligible feed left uneaten. Within each feeding period, each tank was fed in three separate rounds. During each round, zebrafish were offered a small amount of food, and their feeding behavior was carefully observed. Tanks were provided additional small amounts of feed if “hunting” behavior was observed, and fish were monitored to ensure these offerings were consumed. This was repeated five minutes later and again ten minutes later. Overall, each tank had three carefully observed fifteen-minute feeding periods per day. For each tank, feed offerings were halted once signs of slowed feeding behavior in each tank were observed. More specifically, feeding ceased when only two fish remained feeding in the tank or when the feeding period ended.
+
+**Sampling**
+
+At 50 dpf, all fish were euthanized using an ice slurry. All fish were patted dry and individually weighed. Three fish per treatment tank were randomly selected for gene expression analysis; the digestive tracts of these fish were dissected, flash frozen in liquid nitrogen, and stored at -80°C (Meyer et al. 2013). Five fish per treatment tank were randomly selected for histological analysis. Bodies were dissected at an angle below the anal fin and the anterior portion of the body was fixed in 10% neutral buffered formalin prior to histological processing (Sabaliauskas et al. 2006).
+
+**Statistical Analysis**
+
+Statistical analyses were performed using R software (R Foundation for Statistical Computing, Vienna, Austria, Version 4.2.1 “Funny-Looking Kid”). One-way ANOVA was used to assess differences in average individual weight, FCR, relative gene expression levels, and histological measurements among treatment groups. Normality was evaluated using the Shapiro Wilk's method. Levene’s tests were used to test for homogeneity of variances. All data mentioned above were normal with equal variances. Pairwise Tukey tests were used in the case of significance. Differences among treatment groups were considered significant at p values \< 0.05.
+
+Percent survival was determined by dividing the final number of fish in each tank the initial number of fish in the tank and multiplying this value by 100. These values were analyzed using a Kruskal-Wallis one-way ANOVA due to non-normality. Feed conversion ratio (FCR) was also evaluated using a Kruskal-Wallis one-way ANOVA due to non-normality.
+
+## Results
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, results=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+library(car)
+library(rstatix)
+library(multcomp)
+
+FRstudy <- read.csv('FRstudy.csv')
+FRstudy_GE <-read.csv('FRstudy-GE.csv')
+
+shapiro.test(FRstudy$Survival)
+leveneTest(Survival~Treatment, data = FRstudy)
+
+kruskal.test(Survival~Treatment, data = FRstudy)
 ```
 
-You can add options to executable code like this
+Feeding regimen did not significantly affect survival (χ2 = 1.6, p = 0.6594).
 
-```{r}
-#| echo: false
-2 * 2
+```{r, echo=FALSE, fig.cap = 'Average individual weight (g) of fish at experimental termination (50 days-post-fertilization).'}
+ggplot(data = FRstudy, aes(x = Treatment, y = w4_ind))+
+  geom_boxplot()+
+  theme_bw()+
+  labs(x = 'Treatment', y = 'Final Average Weight (g)')
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+```{r, echo=FALSE, warning=FALSE, message=FALSE, results=FALSE}
+
+shapiro.test(FRstudy$w4_ind)
+leveneTest(w4_ind~Treatment, data=FRstudy)
+
+weightaov <- aov(w4_ind~Treatment, data = FRstudy)
+anova(weightaov)
+
+```
+
+There were no significant effects of dietary regimen on final individual weights (F3,8 = 2.1363, p = 0.1751). Numerically, the FM-SBM group had the highest weight per fish followed by FM/SBM, FM-FM, and SBM-SBM (Figure 1).
+
+```{r, echo=FALSE, fig.cap = 'Average feed conversion ratio (FCR) after 26 days of feeding.'}
+ggplot(data = FRstudy, aes(x = Treatment, y = FCR))+
+  geom_boxplot()+
+  theme_bw()
+```
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, results=FALSE}
+
+shapiro.test(FRstudy$FCR)
+leveneTest(FCR~Treatment, data=FRstudy)
+
+FCRaov <- aov(FCR~Treatment, data = FRstudy)
+anova(FCRaov)
+
+kruskal.test(FCR~Treatment, data = FRstudy)
+
+```
+
+Feed conversion ratio (FCR) was not significantly different between treatment groups (X2 = 6.5897, df = 3, p = 0.08619; Figure 2).
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, results=FALSE}
+# il1b dct
+
+shapiro.test(FRstudy_GE$il1b)
+leveneTest(il1b~Treatment, data = FRstudy_GE)
+
+il1b <-aov(il1b~Treatment, data = FRstudy_GE)
+anova(il1b)
+
+# tnfa dct
+
+shapiro.test(FRstudy_GE$tnfa)
+leveneTest(tnfa~Treatment, data = FRstudy_GE)
+
+tnfa <-aov(tnfa~Treatment, data = FRstudy_GE)
+anova(tnfa)
+
+TukeyHSD(tnfa)
+
+# mmp9 dct
+
+shapiro.test(FRstudy_GE$mmp9)
+leveneTest(mmp9~Treatment, data = FRstudy_GE)
+
+mmp9 <-aov(mmp9~Treatment, data = FRstudy_GE)
+anova(mmp9)
+
+# il10
+
+shapiro.test(FRstudy_GE$il10)
+leveneTest(il10~Treatment, data = FRstudy_GE)
+
+il10 <-aov(il10~Treatment, data = FRstudy_GE)
+anova(il10)
+
+```
+
+```{r echo=FALSE, warning=FALSE, message=FALSE, results=FALSE}
+inflammation <- FRstudy_GE %>% 
+  dplyr::select(Treatment,il1b_FC:il10_FC) %>% 
+  pivot_longer(cols = il1b_FC:il10_FC) %>% 
+  group_by(Treatment, name) %>% 
+  summarize(fold_change = mean(value), sd = sd(value), se = sd/sqrt(3))
+
+labels <- c(
+  il1b_FC = 'il1b',
+  tnfa_FC = 'tnfa',
+  mmp9_FC = 'mmp9',
+  il10_FC = 'il10'
+)
+```
+
+```{r graph, echo=FALSE, fig.cap = 'Expression of inflammation-related genes represented as average fold change in reference to the control group (FM-FM; n = 3). Error bars represent standard error of mean'}
+ggplot(data = inflammation, mapping = aes(x = Treatment, y = fold_change, group = name))+
+  geom_col(aes(fill = Treatment))+
+  geom_errorbar(aes(ymin=fold_change-se, ymax=fold_change+se, width = 0.2))+
+  theme_classic()+
+  theme(axis.title.x=element_blank(),
+      axis.text.x=element_blank(),
+      axis.ticks.x = element_blank())+
+  facet_wrap(vars(name), labeller = labeller(name = labels))+
+  labs(x = 'Treatmeant', y = 'Fold Change')
+```
+
+Inflammation-related genes il-1b, tnfa, mmp9, and il-10 were examined. There was a significant effect of dietary treatment on the relative expression of tnfa (F3,8 = 6.9036, p = 0.0131). Pairwise Tukey tests revealed a significantly (p = 0.0090) higher expression of tnfa in the SBM-SBM group compared to the FM-FM group. There were no other significant effects of dietary treatment on the relative expression of inflammatory genes (p \>0.05; Figure 3).
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, results=FALSE}
+
+# ghrelin dct
+
+shapiro.test(FRstudy_GE$ghrelin)
+leveneTest(ghrelin~Treatment, data = FRstudy_GE)
+
+ghrelin <-aov(ghrelin~Treatment, data = FRstudy_GE)
+anova(ghrelin)
+
+# leptin dct
+
+shapiro.test(FRstudy_GE$leptin)
+leveneTest(leptin~Treatment, data = FRstudy_GE)
+
+leptin <-aov(leptin~Treatment, data = FRstudy_GE)
+anova(leptin)
+
+TukeyHSD(leptin)
+
+# cck dct
+
+shapiro.test(FRstudy_GE$cck)
+leveneTest(cck~Treatment, data = FRstudy_GE)
+
+cck <-aov(cck~Treatment, data = FRstudy_GE)
+anova(cck)
+
+```
+
+```{r echo=FALSE, warning=FALSE, message=FALSE, results=FALSE}
+appetite <- FRstudy_GE %>% 
+  dplyr::select(Treatment,ghrelin_FC:cck_FC) %>% 
+  pivot_longer(cols = ghrelin_FC:cck_FC) %>% 
+  group_by(Treatment, name) %>% 
+  summarize(fold_change = mean(value), sd = sd(value), se = sd/sqrt(3))
+
+labels2 <- c(
+  ghrelin_FC = 'ghrelin',
+  leptin_FC = 'leptin',
+  cck_FC = 'cck'
+)
+```
+
+```{r, echo=FALSE, fig.cap = 'Expression of appetite-related genes represented as average fold change in reference to the control group (FM-FM; n = 3). Error bars represent standard error of mean.'}
+ggplot(data = appetite, mapping = aes(x = Treatment, y = fold_change, group = name))+
+  geom_col(aes(fill = Treatment))+
+  geom_errorbar(aes(ymin=fold_change-se, ymax=fold_change+se, width = 0.2))+
+  theme_classic()+
+  theme(axis.title.x=element_blank(),
+      axis.text.x=element_blank(),
+      axis.ticks.x = element_blank())+
+  facet_wrap(vars(name), labeller = labeller(name = labels2))+
+  labs(x = 'Treatmeant', y = 'Fold Change')
+```
+
+Appetite-related genes ghrelin, leptin, and cck were also examined. There was a significant effect of treatment on the relative expression of leptin (p = 0.0150). Pairwise Tukey tests revealed significantly higher expression of leptin in the SBM-SBM group compared to the FM/SBM group (p = 0.0119). There were no significant effects on the relative expression of ghrelin or cck (p \> 0.05; Figure 4).
+
+```{r echo=FALSE, warning=FALSE, message=FALSE, results=FALSE}
+# histology
+
+# proximal intestine
+# villi length
+shapiro.test(FRstudy$prox_length)
+leveneTest(prox_length~Treatment, data = FRstudy)
+
+prox_length <-aov(prox_length~Treatment, data = FRstudy)
+anova(prox_length)
+
+# villi width
+
+shapiro.test(FRstudy$prox_width)
+leveneTest(prox_width~Treatment, data = FRstudy)
+
+prox_width <-aov(prox_width~Treatment, data = FRstudy)
+anova(prox_width)
+
+# villi length to width ratio
+
+shapiro.test(FRstudy$prox_ratio)
+leveneTest(prox_ratio~Treatment, data = FRstudy)
+
+prox_ratio <-aov(prox_ratio~Treatment, data = FRstudy)
+anova(prox_ratio)
+
+# lamina propria
+
+shapiro.test(FRstudy$prox_lp)
+leveneTest(prox_lp~Treatment, data = FRstudy)
+
+prox_lp <-aov(prox_lp~Treatment, data = FRstudy)
+anova(prox_lp)
+
+# muscularis
+
+shapiro.test(FRstudy$prox_musc)
+leveneTest(prox_musc~Treatment, data = FRstudy)
+
+prox_musc <-aov(prox_musc~Treatment, data = FRstudy)
+anova(prox_musc)
+
+# middle intestine
+# villi length
+shapiro.test(FRstudy$mid_length)
+leveneTest(mid_length~Treatment, data = FRstudy)
+
+mid_length <-aov(mid_length~Treatment, data = FRstudy)
+anova(mid_length)
+
+# villi width
+
+shapiro.test(FRstudy$mid_width)
+leveneTest(mid_width~Treatment, data = FRstudy)
+
+mid_width <-aov(mid_width~Treatment, data = FRstudy)
+anova(mid_width)
+
+# villi length to width ratio
+shapiro.test(FRstudy$mid_ratio)
+leveneTest(mid_ratio~Treatment, data = FRstudy)
+
+mid_ratio <-aov(mid_ratio~Treatment, data = FRstudy)
+anova(mid_ratio)
+
+# lamina propria
+
+shapiro.test(FRstudy$mid_lp)
+leveneTest(mid_lp~Treatment, data = FRstudy)
+
+mid_lp <-aov(mid_lp~Treatment, data = FRstudy)
+anova(mid_lp)
+
+# muscularis
+
+shapiro.test(FRstudy$mid_musc)
+leveneTest(mid_musc~Treatment, data = FRstudy)
+
+mid_musc <-aov(mid_musc~Treatment, data = FRstudy)
+anova(mid_musc)
+
+# distal intestine
+# villi length
+shapiro.test(FRstudy$dis_length)
+leveneTest(dis_length~Treatment, data = FRstudy)
+
+dis_length <-aov(dis_length~Treatment, data = FRstudy)
+anova(dis_length)
+
+# villi width
+
+shapiro.test(FRstudy$dis_width)
+leveneTest(dis_width~Treatment, data = FRstudy)
+
+dis_width <-aov(dis_width~Treatment, data = FRstudy)
+anova(dis_width)
+
+# villi length to width ratio
+shapiro.test(FRstudy$dis_ratio)
+leveneTest(dis_ratio~Treatment, data = FRstudy)
+
+dis_ratio <-aov(dis_ratio~Treatment, data = FRstudy)
+anova(dis_ratio)
+
+# lamina propria
+
+shapiro.test(FRstudy$dis_lp)
+leveneTest(dis_lp~Treatment, data = FRstudy)
+
+dis_lp <-aov(dis_lp~Treatment, data = FRstudy)
+anova(dis_lp)
+
+# muscularis
+
+shapiro.test(FRstudy$dis_musc)
+leveneTest(dis_musc~Treatment, data = FRstudy)
+
+dis_musc <-aov(dis_musc~Treatment, data = FRstudy)
+anova(dis_musc)
+
+library(kableExtra)
+```
+
+```{r, echo = FALSE}
+
+proximal <- FRstudy %>% 
+  dplyr::select(Treatment,prox_length:prox_musc) %>% 
+  group_by(Treatment) %>% 
+  summarize(mean_length = mean(prox_length), sd_length = sd(prox_length), mean_width = mean(prox_width), sd_width = sd(prox_width), mean_ratio = mean(prox_ratio), sd_ratio = sd(prox_ratio), mean_lp = mean(prox_lp), sd_lp = sd(prox_lp), mean_musc = mean(prox_musc), sd_musc = sd(prox_musc))
+
+middle <- FRstudy %>% 
+  dplyr::select(Treatment,mid_length:mid_musc) %>% 
+  group_by(Treatment) %>% 
+  summarize(mean_length = mean(mid_length), sd_length = sd(mid_length), mean_width = mean(mid_width), sd_width = sd(mid_width), mean_ratio = mean(mid_ratio), sd_ratio = sd(mid_ratio), mean_lp = mean(mid_lp), sd_lp = sd(mid_lp), mean_musc = mean(mid_musc), sd_musc = sd(mid_musc))
+
+distal <- FRstudy %>% 
+  dplyr::select(Treatment,dis_length:dis_musc) %>% 
+  group_by(Treatment) %>% 
+  summarize(mean_length = mean(dis_length), sd_length = sd(dis_length), mean_width = mean(dis_width), sd_width = sd(dis_width), mean_ratio = mean(dis_ratio), sd_ratio = sd(dis_ratio), mean_lp = mean(dis_lp), sd_lp = sd(dis_lp), mean_musc = mean(dis_musc), sd_musc = sd(dis_musc))
+```
+
+Measurements of intestinal villi length, villi width, lamina propria, and muscularis ratio were taken from the proximal, middle, and distal portions of the intestine. There were no significant differences among treatment groups for any of the measurements (p > 0.05; Tables 1-3).
+
+```{r, echo=FALSE}
+kable(proximal, col.names = c('Treatment','Villi Length', 'sd', 'Villi Width', 'sd', 'Villi Length:Width', 'sd', 'Lamina Propria', 'sd', 'Muscularis', 'sd'), digits = 2, caption = 'Histological measurements (µm) of the proximal intestine. Values are presented as average and standard deviation. There were no significant differences between treatment groups (p > 0.05).') %>%
+  add_header_above(c("Proximal" = 11)) %>% 
+  kable_material() %>% 
+  kable_styling(font_size = 8)
+
+kable(middle, col.names = c('Treatment','Villi Length', 'sd', 'Villi Width', 'sd', 'Villi Length:Width', 'sd', 'Lamina Propria', 'sd', 'Muscularis', 'sd'), digits = 2, caption = 'Histological measurements (µm) of the middle intestine. Values are presented as average and standard deviation. There were no significant differences between treatment groups (p > 0.05).') %>%
+  add_header_above(c("Middle" = 11)) %>% 
+  kable_material() %>% 
+  kable_styling(font_size = 8)
+
+kable(distal, col.names = c('Treatment','Villi Length', 'sd', 'Villi Width', 'sd', 'Villi Length:Width', 'sd', 'Lamina Propria', 'sd', 'Muscularis', 'sd'), digits = 2, caption = 'Histological measurements (µm) of the distal intestine. Values are presented as average and standard deviation. There were no significant differences between treatment groups (p > 0.05).') %>%
+  add_header_above(c("Distal" = 11)) %>% 
+  kable_material() %>% 
+  kable_styling(font_size = 8)
+```
+
+## Discussion
+
+**Growth Performance**
+
+While there were no significant differences in final average weight between treatment groups, 
+
+
+**Feed Utilization**
+
+**Intestinal Health**
+
+## References
+
+Agboola JO, Chikwati EM, Hansen JØ, Kortner TM, Mydland LT, Krogdahl Å,         Djordjevic B, Schrama JW, Øverland M. A meta-analysis to determine factors      associated with the severity of enteritis in Atlantic salmon (*Salmo salar*)    fed soybean meal-based diets. Aquaculture. 2022a;555:738214. doi:               10.1016/j.aquaculture.2022.738214
+
+Dametto FS, Fior D, Idalencio R, Rosa JGS, Fagundes M, Marqueze A, Barreto RE,  Piato A, Barcellos LJG. Feeding regimen modulates zebrafish behavior. PeerJ.    2018:e5343. doi: 10.7717/peerj.5343
+
+Dissinger A, Bowman J, Molinari GS, Kwasek K. Effects of oregano (*Origanum     vulgare*) essential oil supplementation on growth performance of zebrafish      (*Danio rerio*) fed a high-inclusion soybean meal diet. Zebrafish.              2024a;21(5):.   doi: 10.1089/zeb.2024.0139
+
+Dissinger A, Rimoldi S, Terova G, Kwasek K. Chronic social isolation affects    feeding behavior of juvenile zebrafish (*Danio rerio*). PLoS ONE.               2024b;19(7):e0307967. doi: 10.1371/journal.pone.0307967
+
+Fang L, Liang XF, Zhou Y, Guo XZ, He Y, Yi TL, Liu LW, Yuan XC, Tao YX.         Programming effects of high-carbohydrate feeding of larvae on adult glucose   metabolism in zebrafish, *Danio rerio*. British Journal of Nutrition.          2013;111(5):808-818. doi: 10.1017/S0007114513003243
+
+Farias M, Certal AC. Different Feeds and Feeding Regimens have an Impact on     Zebrafish Larval Rearing and Breeding Performance. International Journal of     Marine Biology and Research. 1(1):1-18.
+
+Fernandes H, Peres H, Carvalho AP. Dietary Protein Requirement During Juvenile  Growth of Zebrafish (*Danio rerio*). Zebrafish;13(6):548-555. doi:            10.1089/zeb.2016.1303
+
+Francis G, Makkar HPS, Becker K. Antinutritional factors present in             plant-derived alternate fish feed ingredients and their effects in fish.        Aquaculture. 2001;199:197-227. doi: 10.1016/S0044-8486(01)00526-9
+
+Fuentes-Quesada JP, Viana MT, Rombenso AN, Guerrero-Rentería Y, Nomura-Solís M, Gomez-Calle V, Lazo JP, Mata-Sotres JA. Enteritis induction by soybean meal in  Totoaba macdonaldi diets: Effects on growth performance, digestive capacity,    immune response and distal integrity. Aquaculture. 2018;495:78-89. doi:         10.1016/j.aquaculture.2018.05.025
+
+Gonzales JM, Law SHW. Feed and Feeding Regime Affect Growth Rate and            Gonadosomatic Index of Adult Zebrafish (*Danio rerio*). Zebrafish. 2013;10.   doi: 10.1089/zeb.2013.0891
+
+Gu M, Bai N, Zhang Y, Krogdahl Å. Soybean meal induces enteritis in turbot      *Scophthalmus maximus* at high supplementation levels. Aquaculture.           2016;464:286-295. doi: 10.1016/j.aquaculture.2016.06.035
+
+Hua K, Cobcroft JM, Cole A, Condon K, Jerry DR, Mangott A, Praeger C, Vucko MJ, Zeng C, Zenger K, Strugnell JM. The Future of Aquatic Protein: Implications     for Protein Sources in Aquaculture Diets. One Earth. 2019;1(3):316-329. doi:    10.1016/j.oneear.2019.10.018
+
+Krogdahl Å, Penn M, Thorsen J, Refstie S, Bakke AM. Important antinutrients in  plant feedstuffs for aquaculture: an update on recent findings regarding        responses in salmonids. Aquaculture Research. 2010;41:333-344. doi:             10.1111/j.1365-2109.2009.02426.x
+
+Kwasek K, Wojno M, Iannini F, McCracken VJ, Molinari GS, Terova G. Nutritional  programming improves dietary plant protein utilization in zebrafish *Danio     rerio*. PLoS ONE. 2020;15(3):e0225917. doi: 10.1371/journal.pone.0225917
+
+Kwasek K, Patula S, Wojno M, Oliaro F, Cabay C, Pinnell LJ. Does Exposure of    Broodstock to Dietary Soybean Meal Affect Its Utilization in the Offspring of   Zebrafish (*Danio rerio*)? Animals. 2022;12(2):1475. doi:                     10.3390/ani12121475
+
+Lawrence C, Best J, James A, Maloney K. The effects of feeding frequency on     growth and reproduction in zebrafish (*Danio rerio*). Aquaculture.            2012;368-369:102-108. doi: 10.1016/j.aquaculture.2012.09.022 
+
+Lin S, Luo L. Effects of different levels of soybean meal inclusion in          replacement for fish meal on growth, digestive enzymes and transaminase         activities in practical diets for juvenile tilapia, *Oreochromis niloticus*   × *O. aureus*. Animal Feed and Science Technology 2011;168(1-2):80-87. doi:   10.1016/j.anifeedsci.2011.03.012
+
+Makkar, H.P.S., 1993. Antinutritional factors in foods for livestock. In: Gill, M., Owen, E., Pollot, G.E.,Lawrence, T.L.J. Eds. , Animal Production in         Developing Countries. Occasional publication No. 16. Ž .British Society of      Animal Production, pp. 69–85.
+
+Meyer BM, Froehlich JM, Galt NJ, Biga PR. Inbred strains of zebrafish exhibit   variation in growth performance and myostatin expression following fasting.     Comparative Biochemistry and Physiology, A. 2013;164:1-9. doi:                  10.1016/j.cbpa.2012.10.004
+
+National Research Council. Nutrient requirements of fish and shrimp. National   academies press, 2011.
+
+Oliva-Teles A, Enes P, Peres H. Replacing fishmeal and fish oil in industrial   aquafeeds for carnivorous fish. Feed and Feeding Practices in Aquaculture.      2015:203-233. doi: 10.1016/B978-0-08-100506-4.00008-8
+
+Park H, Weier S, Razvi F, Peña PA, Sims NA, Lowell J, Hungate C, Kissinger K,   Key G, Fraser P, Napier JA, Cahoon EB, Clemente TE. Towards the development of  a sustainable soya bean-based feedstock for aquaculture. Plat Biotechnology     Journal. 2017;15:227-236. doi: 10.1111/pbi.12608
+
+Peng KS, Wu N, Cui ZW, Zhang XY, Lu XB, Wang ZX, Checn DD, Zhang YA. Effect of  the complete replacement of dietary fish meal by soybean meal on                histopathology and immune response of the hindgut in grass carp                 (*Ctenopharyngodon idellus*). Veterinary Immunology and Immunopathology.      2020;221:110009. doi: 10.1016/j.vetimm.2020.110009
+
+Sabaliauskas NA, Foutz CA, Mest JR, Budgeon LR, Sidor AT, Gershenson JA, Joshi  SB, Cheng KC. High-throughput zebrafish histology. Methods.                     2006;39(3):246-254. doi: 10.1016/j.ymeth.2006.03.001 
+
+Sales J. The effect of fish meal replacement by soyabean products on fish       growth: a meta-analysis. British Journal of Nutrition. 2009;102:1709-1722.      doi: 10.1017/S0007114509991279
+
+Urán PA, Schrama JW, Rombout JHWM, Taverne-Thiele JJ, Obach A, Koppe W, Verreth JAJ. Time-related changes of the intestinal morphology of Atlantic salmon,      *Salmo salar* L., at two different soybean meal inclusion levels. Journal of  Fish Diseases. 2009;32(9):733-744. doi: 10.1111/j.1365-2761.2009.01049.x
+
+Zhou QC, Mai KS, Tan BP, Liu YJ. Partial replacement of fishmeal by soybean meal in diets for juvenile cobia (*Rachycentron canadum*). Aquaculture Nutrition.2005;11(3):175-182. doi:10.1111/j.1365-2095.2005.00335.x
