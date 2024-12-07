@@ -4,8 +4,10 @@ author: "Aubrey Dissinger"
 format: pdf
 editor: visual
 editor_options: 
-  chunk_output_type: console
+  chunk_output_type: 
 ---
+
+[Github](https://github.com/aubreydissinger/final-project.git)
 
 ## Introduction
 
@@ -380,67 +382,99 @@ kable(distal, col.names = c('Treatment','Villi Length', 'sd', 'Villi Width', 'sd
 
 ## Discussion
 
-**Growth Performance**
+  Dietary plant protein sources, such as soybean meal, have been known to induce adverse effects, namely growth reduction and intestinal inflammation, in a broad spectrum of fish species (Fuentes-Appelgren et al. 2014, Ulloa et al. 2014). Due to the potential delay for the onset of SBMIE symptoms, this study sought to investigate alternating feeding regimens as a preventative method of mitigating diet-induced inflammation. 
+  
+**Growth Performance and Feed Utilization**
 
-While there were no significant differences in final average weight between treatment groups, 
-
-
-**Feed Utilization**
+  Past studies have shown significant effects of SBM on weight gain and feed utilization in fish (Fontainhas-Fernandes et al. 1999, Zhou et al. 2005, de Francesco et al. 2004, Uran et al. 2009, Chen et al. 2011). These negative effects have been demonstrated in some studies of zebrafish (Micheloni et al. 2022, Hedrera et al. 2013), however, other studies have found that zebrafish are able to tolerate SBM with minimal consequences on their growth and health (Rehman et al. 2021, Dissinger et al. 2024). 
+ 
+  While there were no significant differences in final average weight between treatment groups, numerically, the FM-SBM group had the highest weight per fish followed by FM/SBM, FM-FM, and SBM-SBM (Figure 1). Additionally, no significant differences in FCR was observed between groups, but the FM-FM group had the numerically lowest FCR followed by FM/SBM, FM-SBM, and finally the SBM-SBM group. Significantly increased relative expression of leptin, an anorexigenic hormone, in the SBM-SBM group in comparison to the FM/SBM group could point to some effect on appetite by SBM. Leptin has roles in both regulation of feed intake and control of body weight (Mania et al. 2017, Volkoff et al. 2005). Increased leptin levels are typically associated with decreased feed intake and increased energy expenditure (Volkoff et al. 2005). 
+  
 
 **Intestinal Health**
 
+  There were no significant differences in histological measurements between treatment groups suggesting no morphological signs of inflammation were present in the intestine at the time of sampling. However, the SBM-SBM group had significantly higher relative expression of tnfa, a pro-inflammatory cytokine, compared to the FM-FM group. Additionally, the SBM-SBM group had numerically higher expression of all inflammation-related genes compared to the other groups. This could suggest onset of some inflammatory response potentially induced by the plant-based diet. 
+
+  While inter-individual differences in immune response can be influenced by non-heritable factors such as environment and age, it is estimated that the genetic component can account for up to 40% of immune responses (Padovani et al. 2022). Strain-specific immunological profiles can exist; this was recently presented by Padovani et al. (2022) who found there to be significant differences in mortality and inflammatory responses of AB or TU larval zebrafish exposed to 2,4,6-Trinitrobenzenesulfonic acid (TNBS), a common agent used to induce inflammatory bowel disease (IBD). The use of pet-store derived, highly domesticated zebrafish in this study could provide some explanation for the lack of signficiant differences in weight, FCR, and expression of inflammation-related genes. 
+ 
+  The results of this study could suggest a potential role of genetic background on the divergent results observed in zebrafish studies of SBM-induced enteritis (Valenzuela et al. 2021). Thus, future studies should investigate the use of different wild-type strain zebrafish to determine an appropriate nutritional model for investigating plant protein-based feeds and mitigation of intestinal inflammation. 
+
 ## References
 
-Agboola JO, Chikwati EM, Hansen JØ, Kortner TM, Mydland LT, Krogdahl Å,         Djordjevic B, Schrama JW, Øverland M. A meta-analysis to determine factors      associated with the severity of enteritis in Atlantic salmon (*Salmo salar*)    fed soybean meal-based diets. Aquaculture. 2022a;555:738214. doi:               10.1016/j.aquaculture.2022.738214
+Agboola JO, Chikwati EM, Hansen JØ, Kortner TM, Mydland LT, Krogdahl Å,  Djordjevic B, Schrama JW, Øverland M. A meta-analysis to determine factors associated with the severity of enteritis in Atlantic salmon (*Salmo salar*) fed soybean meal-based diets. Aquaculture. 2022a;555:738214. doi: 10.1016/j.aquaculture.2022.738214
 
-Dametto FS, Fior D, Idalencio R, Rosa JGS, Fagundes M, Marqueze A, Barreto RE,  Piato A, Barcellos LJG. Feeding regimen modulates zebrafish behavior. PeerJ.    2018:e5343. doi: 10.7717/peerj.5343
+Chen W, Ai Q, Mai K, et al. Effects of dietary soybean saponins on feed intake, growth performance, digestibility and intestinal structure in juvenile Japanese flounder (Paralichthys olivaceus). Aquaculture 2011;318(1–2):95–100
 
-Dissinger A, Bowman J, Molinari GS, Kwasek K. Effects of oregano (*Origanum     vulgare*) essential oil supplementation on growth performance of zebrafish      (*Danio rerio*) fed a high-inclusion soybean meal diet. Zebrafish.              2024a;21(5):.   doi: 10.1089/zeb.2024.0139
+Dametto FS, Fior D, Idalencio R, Rosa JGS, Fagundes M, Marqueze A, Barreto RE,  Piato A, Barcellos LJG. Feeding regimen modulates zebrafish behavior. PeerJ. 2018:e5343. doi: 10.7717/peerj.5343
 
-Dissinger A, Rimoldi S, Terova G, Kwasek K. Chronic social isolation affects    feeding behavior of juvenile zebrafish (*Danio rerio*). PLoS ONE.               2024b;19(7):e0307967. doi: 10.1371/journal.pone.0307967
+Dissinger A, Bowman J, Molinari GS, Kwasek K. Effects of oregano (*Origanum vulgare*) essential oil supplementation on growth performance of zebrafish (*Danio rerio*) fed a high-inclusion soybean meal diet. Zebrafish. 2024a;21(5):. doi: 10.1089/zeb.2024.0139
 
-Fang L, Liang XF, Zhou Y, Guo XZ, He Y, Yi TL, Liu LW, Yuan XC, Tao YX.         Programming effects of high-carbohydrate feeding of larvae on adult glucose   metabolism in zebrafish, *Danio rerio*. British Journal of Nutrition.          2013;111(5):808-818. doi: 10.1017/S0007114513003243
+Dissinger A, Rimoldi S, Terova G, Kwasek K. Chronic social isolation affects feeding behavior of juvenile zebrafish (*Danio rerio*). PLoS ONE. 2024b;19(7):e0307967. doi: 10.1371/journal.pone.0307967
 
-Farias M, Certal AC. Different Feeds and Feeding Regimens have an Impact on     Zebrafish Larval Rearing and Breeding Performance. International Journal of     Marine Biology and Research. 1(1):1-18.
+Fang L, Liang XF, Zhou Y, Guo XZ, He Y, Yi TL, Liu LW, Yuan XC, Tao YX. Programming effects of high-carbohydrate feeding of larvae on adult glucose metabolism in zebrafish, *Danio rerio*. British Journal of Nutrition. 2013;111(5):808-818. doi: 10.1017/S0007114513003243
 
-Fernandes H, Peres H, Carvalho AP. Dietary Protein Requirement During Juvenile  Growth of Zebrafish (*Danio rerio*). Zebrafish;13(6):548-555. doi:            10.1089/zeb.2016.1303
+Farias M, Certal AC. Different Feeds and Feeding Regimens have an Impact on Zebrafish Larval Rearing and Breeding Performance. International Journal of Marine Biology and Research. 1(1):1-18.
 
-Francis G, Makkar HPS, Becker K. Antinutritional factors present in             plant-derived alternate fish feed ingredients and their effects in fish.        Aquaculture. 2001;199:197-227. doi: 10.1016/S0044-8486(01)00526-9
+Fernandes H, Peres H, Carvalho AP. Dietary Protein Requirement During Juvenile  Growth of Zebrafish (*Danio rerio*). Zebrafish;13(6):548-555. doi: 10.1089/zeb.2016.1303
 
-Fuentes-Quesada JP, Viana MT, Rombenso AN, Guerrero-Rentería Y, Nomura-Solís M, Gomez-Calle V, Lazo JP, Mata-Sotres JA. Enteritis induction by soybean meal in  Totoaba macdonaldi diets: Effects on growth performance, digestive capacity,    immune response and distal integrity. Aquaculture. 2018;495:78-89. doi:         10.1016/j.aquaculture.2018.05.025
+Fontainhas-Fernandes A, Gomes E, Reis-Henriques MA, Coimbra J. Replacement of Fish Meal by Plant Proteins in the Diet of Nile Tilapia: Digestibility and Growth Performance. Aquacult. Int. 1999;7:57–67.
 
-Gonzales JM, Law SHW. Feed and Feeding Regime Affect Growth Rate and            Gonadosomatic Index of Adult Zebrafish (*Danio rerio*). Zebrafish. 2013;10.   doi: 10.1089/zeb.2013.0891
+de Francesco M, Parisi G, Médale F, Lupi P, Kaushik SJ, Poli BM. Effect of long-term feeding with a plant protein mixture based diet on growth and body/fillet quality traits of large rainbow trout (Oncorhynchus mykiss). Aquaculture. 2004;236(1–4):413–29.
 
-Gu M, Bai N, Zhang Y, Krogdahl Å. Soybean meal induces enteritis in turbot      *Scophthalmus maximus* at high supplementation levels. Aquaculture.           2016;464:286-295. doi: 10.1016/j.aquaculture.2016.06.035
+Francis G, Makkar HPS, Becker K. Antinutritional factors present in plant-derived alternate fish feed ingredients and their effects in fish. Aquaculture. 2001;199:197-227. doi: 10.1016/S0044-8486(01)00526-9
 
-Hua K, Cobcroft JM, Cole A, Condon K, Jerry DR, Mangott A, Praeger C, Vucko MJ, Zeng C, Zenger K, Strugnell JM. The Future of Aquatic Protein: Implications     for Protein Sources in Aquaculture Diets. One Earth. 2019;1(3):316-329. doi:    10.1016/j.oneear.2019.10.018
+Fuentes-Appelgren P, Opazo R, Barros L, Feijoo CG, Urzua V, Romero J. Effect of the Dietary Inclusion of Soybean Components on the Innate Immune System in Zebrafish. Zebrafish. 2014;11(1):41-49. doi: 10.1089/zeb.2013.0934
 
-Krogdahl Å, Penn M, Thorsen J, Refstie S, Bakke AM. Important antinutrients in  plant feedstuffs for aquaculture: an update on recent findings regarding        responses in salmonids. Aquaculture Research. 2010;41:333-344. doi:             10.1111/j.1365-2109.2009.02426.x
+Fuentes-Quesada JP, Viana MT, Rombenso AN, Guerrero-Rentería Y, Nomura-Solís M, Gomez-Calle V, Lazo JP, Mata-Sotres JA. Enteritis induction by soybean meal in  Totoaba macdonaldi diets: Effects on growth performance, digestive capacity,    immune response and distal integrity. Aquaculture. 2018;495:78-89. doi: 10.1016/j.aquaculture.2018.05.025
 
-Kwasek K, Wojno M, Iannini F, McCracken VJ, Molinari GS, Terova G. Nutritional  programming improves dietary plant protein utilization in zebrafish *Danio     rerio*. PLoS ONE. 2020;15(3):e0225917. doi: 10.1371/journal.pone.0225917
+Gonzales JM, Law SHW. Feed and Feeding Regime Affect Growth Rate and Gonadosomatic Index of Adult Zebrafish (*Danio rerio*). Zebrafish. 2013;10. doi: 10.1089/zeb.2013.0891
 
-Kwasek K, Patula S, Wojno M, Oliaro F, Cabay C, Pinnell LJ. Does Exposure of    Broodstock to Dietary Soybean Meal Affect Its Utilization in the Offspring of   Zebrafish (*Danio rerio*)? Animals. 2022;12(2):1475. doi:                     10.3390/ani12121475
+Gu M, Bai N, Zhang Y, Krogdahl Å. Soybean meal induces enteritis in turbot *Scophthalmus maximus* at high supplementation levels. Aquaculture. 2016;464:286-295. doi: 10.1016/j.aquaculture.2016.06.035
 
-Lawrence C, Best J, James A, Maloney K. The effects of feeding frequency on     growth and reproduction in zebrafish (*Danio rerio*). Aquaculture.            2012;368-369:102-108. doi: 10.1016/j.aquaculture.2012.09.022 
+Hedrera MI, Galdames JA, Jimenez-Reyes MF, Reyes AE, Avedano-Herrera, R, Romero J, Feijoo CG. Soybean Meal Influences Intestinal Inflammation in Zebrafish Larvae. PLOS ONE. 2013;8(7):e69983.
 
-Lin S, Luo L. Effects of different levels of soybean meal inclusion in          replacement for fish meal on growth, digestive enzymes and transaminase         activities in practical diets for juvenile tilapia, *Oreochromis niloticus*   × *O. aureus*. Animal Feed and Science Technology 2011;168(1-2):80-87. doi:   10.1016/j.anifeedsci.2011.03.012
+Hua K, Cobcroft JM, Cole A, Condon K, Jerry DR, Mangott A, Praeger C, Vucko MJ, Zeng C, Zenger K, Strugnell JM. The Future of Aquatic Protein: Implications for Protein Sources in Aquaculture Diets. One Earth. 2019;1(3):316-329. doi: 10.1016/j.oneear.2019.10.018
 
-Makkar, H.P.S., 1993. Antinutritional factors in foods for livestock. In: Gill, M., Owen, E., Pollot, G.E.,Lawrence, T.L.J. Eds. , Animal Production in         Developing Countries. Occasional publication No. 16. Ž .British Society of      Animal Production, pp. 69–85.
+Krogdahl Å, Penn M, Thorsen J, Refstie S, Bakke AM. Important antinutrients in  plant feedstuffs for aquaculture: an update on recent findings regarding  responses in salmonids. Aquaculture Research. 2010;41:333-344. doi: 10.1111/j.1365-2109.2009.02426.x
 
-Meyer BM, Froehlich JM, Galt NJ, Biga PR. Inbred strains of zebrafish exhibit   variation in growth performance and myostatin expression following fasting.     Comparative Biochemistry and Physiology, A. 2013;164:1-9. doi:                  10.1016/j.cbpa.2012.10.004
+Kwasek K, Wojno M, Iannini F, McCracken VJ, Molinari GS, Terova G. Nutritional  programming improves dietary plant protein utilization in zebrafish *Danio rerio*. PLoS ONE. 2020;15(3):e0225917. doi: 10.1371/journal.pone.0225917
+
+Kwasek K, Patula S, Wojno M, Oliaro F, Cabay C, Pinnell LJ. Does Exposure of    Broodstock to Dietary Soybean Meal Affect Its Utilization in the Offspring of   Zebrafish (*Danio rerio*)? Animals. 2022;12(2):1475. doi: 10.3390/ani12121475
+
+Lawrence C, Best J, James A, Maloney K. The effects of feeding frequency on growth and reproduction in zebrafish (*Danio rerio*). Aquaculture. 2012;368-369:102-108. doi: 10.1016/j.aquaculture.2012.09.022 
+
+Lin S, Luo L. Effects of different levels of soybean meal inclusion in replacement for fish meal on growth, digestive enzymes and transaminase activities in practical diets for juvenile tilapia, *Oreochromis niloticus* × *O. aureus*. Animal Feed and Science Technology 2011;168(1-2):80-87. doi: 10.1016/j.anifeedsci.2011.03.012
+
+Makkar, H.P.S., 1993. Antinutritional factors in foods for livestock. In: Gill, M., Owen, E., Pollot, G.E.,Lawrence, T.L.J. Eds. , Animal Production in Developing Countries. Occasional publication No. 16. Ž .British Society of Animal Production, pp. 69–85.
+
+Mania, M. et al. Expression and distribution of leptin and its receptors in the digestive tract of DIO (diet-induced obese) zebrafish. Anzeiger 212, 37-47. doi: 10.1016/j.aanat.2017.03.005
+
+Meyer BM, Froehlich JM, Galt NJ, Biga PR. Inbred strains of zebrafish exhibit variation in growth performance and myostatin expression following fasting. Comparative Biochemistry and Physiology, A. 2013;164:1-9. doi: 10.1016/j.cbpa.2012.10.004
+
+Micheloni G, Carnovali M, Millefanti G, Rizzetto M, Moretti V, Montalbano G, Acquati F, Giaroni C, Valli R, Costantino L, Ferrara F, Banfi G, Mariotti M, Porta G. Soy diet induces intestinal inflammation in adult Zebrafish: Role of OTX and P53 family. International Journal of Experimental Pathology. 2021;103:13-22. doi: 10.1111/iep.12420
 
 National Research Council. Nutrient requirements of fish and shrimp. National   academies press, 2011.
 
-Oliva-Teles A, Enes P, Peres H. Replacing fishmeal and fish oil in industrial   aquafeeds for carnivorous fish. Feed and Feeding Practices in Aquaculture.      2015:203-233. doi: 10.1016/B978-0-08-100506-4.00008-8
+Oliva-Teles A, Enes P, Peres H. Replacing fishmeal and fish oil in industrial   aquafeeds for carnivorous fish. Feed and Feeding Practices in Aquaculture. 2015:203-233. doi: 10.1016/B978-0-08-100506-4.00008-8
 
-Park H, Weier S, Razvi F, Peña PA, Sims NA, Lowell J, Hungate C, Kissinger K,   Key G, Fraser P, Napier JA, Cahoon EB, Clemente TE. Towards the development of  a sustainable soya bean-based feedstock for aquaculture. Plat Biotechnology     Journal. 2017;15:227-236. doi: 10.1111/pbi.12608
+Padovani BN, do Amaral MA, Fénero CM, Paredes LC, de Barros GJB, Xavier IK, Hiyane MI, Ghirotto B, Feijóo CG, Câmara NOS, Takiishi T. Different wild type strains of zebrafish show divergent susceptibility to TNBS-induced intestinal inflammation displaying distinct immune cell profiles. Current Research in Immunology 2022;3:13-22. doi: 10.1016/j.crimmu.2021.12.003
 
-Peng KS, Wu N, Cui ZW, Zhang XY, Lu XB, Wang ZX, Checn DD, Zhang YA. Effect of  the complete replacement of dietary fish meal by soybean meal on                histopathology and immune response of the hindgut in grass carp                 (*Ctenopharyngodon idellus*). Veterinary Immunology and Immunopathology.      2020;221:110009. doi: 10.1016/j.vetimm.2020.110009
+Park H, Weier S, Razvi F, Peña PA, Sims NA, Lowell J, Hungate C, Kissinger K,   Key G, Fraser P, Napier JA, Cahoon EB, Clemente TE. Towards the development of  a sustainable soya bean-based feedstock for aquaculture. Plat Biotechnology Journal. 2017;15:227-236. doi: 10.1111/pbi.12608
 
-Sabaliauskas NA, Foutz CA, Mest JR, Budgeon LR, Sidor AT, Gershenson JA, Joshi  SB, Cheng KC. High-throughput zebrafish histology. Methods.                     2006;39(3):246-254. doi: 10.1016/j.ymeth.2006.03.001 
+Peng KS, Wu N, Cui ZW, Zhang XY, Lu XB, Wang ZX, Checn DD, Zhang YA. Effect of  the complete replacement of dietary fish meal by soybean meal on histopathology and immune response of the hindgut in grass carp  (*Ctenopharyngodon idellus*). Veterinary Immunology and Immunopathology. 2020;221:110009. doi: 10.1016/j.vetimm.2020.110009
 
-Sales J. The effect of fish meal replacement by soyabean products on fish       growth: a meta-analysis. British Journal of Nutrition. 2009;102:1709-1722.      doi: 10.1017/S0007114509991279
+Rehman S, Gora AH, Siriyappagouder P, Brugman S, Fernandes JM, Dias J, Kiron V. Zebrafish intestinal transcriptome highlights subdued inflammatory responses to dietary soya bean and efficacy of yeast β-glucan. Journal of Fish Diseases. 2021;44(10):1481-1668. doi: 10.1111/jfd.13484
 
-Urán PA, Schrama JW, Rombout JHWM, Taverne-Thiele JJ, Obach A, Koppe W, Verreth JAJ. Time-related changes of the intestinal morphology of Atlantic salmon,      *Salmo salar* L., at two different soybean meal inclusion levels. Journal of  Fish Diseases. 2009;32(9):733-744. doi: 10.1111/j.1365-2761.2009.01049.x
+Sabaliauskas NA, Foutz CA, Mest JR, Budgeon LR, Sidor AT, Gershenson JA, Joshi  SB, Cheng KC. High-throughput zebrafish histology. Methods. 2006;39(3):246-254. doi: 10.1016/j.ymeth.2006.03.001 
+
+Sales J. The effect of fish meal replacement by soyabean products on fish growth: a meta-analysis. British Journal of Nutrition. 2009;102:1709-1722. doi: 10.1017/S0007114509991279
+
+Ulloa PE, Medrano JF, Feijoo CG. Zebrafish as animal model for aquaculture nutrition research. Genetics. 2014;5(313):1-6. doi: 10.3389/fgene.2014.0031
+
+Urán PA, Schrama JW, Rombout JHWM, Taverne-Thiele JJ, Obach A, Koppe W, Verreth JAJ. Time-related changes of the intestinal morphology of Atlantic salmon, *Salmo salar* L., at two different soybean meal inclusion levels. Journal of  Fish Diseases. 2009;32(9):733-744. doi: 10.1111/j.1365-2761.2009.01049.x
+
+Valenzuela L, Pacheco S, Rincón G, Pavez L, Lam N, Hernández AJ, Dantagnan P, González F, Jilberto F, Ravanal MC, Ramos C, Garcia H, Araneda C, Ulloa PE. Intestinal Transcriptome Analysis Reveals Enrichment of Genes Associated with Immune and Lipid Mechanisms, Favoring Soybean Meal Tolerance in High-Growth Zebrafish (*Danio rerio*). Genes. 2021;12:700. doi: 10.3390/genes12050700
+
+Volkoff, H. et al. Neuropeptides and the control of food intake in fish. Gen. Comp. Endocrinol. 142, 3-19 (2005). doi: 10.1016/j.ygcen.2004.11.001
 
 Zhou QC, Mai KS, Tan BP, Liu YJ. Partial replacement of fishmeal by soybean meal in diets for juvenile cobia (*Rachycentron canadum*). Aquaculture Nutrition.2005;11(3):175-182. doi:10.1111/j.1365-2095.2005.00335.x
